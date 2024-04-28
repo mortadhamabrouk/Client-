@@ -1,0 +1,13 @@
+/* Profile styles */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .profile-content {
+    max-width: 800px; /* Set maximum width for the content */
+    padding: 20px; /* Add padding for spacing */
+  }
+  

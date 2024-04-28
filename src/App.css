@@ -1,0 +1,76 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Heading styles */
+h3 {
+  color: #333; /* Dark gray color */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Increased padding for better touchability */
+  background-color: #65e8f9; /* Light blue button color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #4bc3d3; /* Darker blue on hover */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+  background-color: #007bff; /* Blue background */
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.navbar {
+  background-color: #333; /* Dark gray navbar */
+}
+.navbar.logout-button {
+  float: left;
+}
+/* Profile styles */
+.Profile-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Set a maximum width */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.profile-container .task-form {
+  margin-right: 20px; /* Add some spacing between profile and task form */
+}
