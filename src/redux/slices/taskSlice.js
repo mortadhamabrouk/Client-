@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const CreateTask=createAsyncThunk ('/newtask',async(data,{rejectWithValue,dispatch})=>{
     try {
-        const res=await axios.post("http://localhost:8081/api/task/post",data,{
+        const res=await axios.post("https://server-74tn.onrender.com/api/task/post",data,{
             headers:{
                 token:localStorage.getItem('token')
             }
@@ -16,7 +16,7 @@ export const CreateTask=createAsyncThunk ('/newtask',async(data,{rejectWithValue
 )
 export const DeleteTask=createAsyncThunk ('/delete',async(data,{rejectWithValue,dispatch})=>{
     try {
-        const res=await axios.delete(`http://localhost:8081/api/task/delete/${data}`,{
+        const res=await axios.delete(`https://server-74tn.onrender.com/api/task/delete/${data}`,{
             headers:{
                 token:localStorage.getItem('token')
             }
@@ -29,7 +29,7 @@ export const DeleteTask=createAsyncThunk ('/delete',async(data,{rejectWithValue,
 )
 export const GetTasks=createAsyncThunk ('/GetAllTasks',async(data,{rejectWithValue})=>{
     try {
-        const res=await axios.get("http://localhost:8081/api/task/get",{
+        const res=await axios.get("https://server-74tn.onrender.com/api/task/get",{
             headers:{
                 token:localStorage.getItem('token')
             }
